@@ -5,6 +5,7 @@ import Home from "./page/Home";
 import Host from "./page/Host";
 import About from "./page/About";
 import Vans from "./page/Vans";
+import "./App.css"
 
 const App = () => {
     return(
