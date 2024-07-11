@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink, Outlet } from "react-router-dom"
+import Footer from "./Footer";
 import "./Layout.css"
 
 const Layout = () => {
@@ -38,7 +39,8 @@ const Layout = () => {
                 <NavLink to="vans">Vans</NavLink>
             </div>
             <main className={outlet_container}>
-                <Outlet/>
+                <Outlet />
+                <Footer />
             </main>
         </div>
     )
