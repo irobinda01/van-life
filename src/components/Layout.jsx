@@ -23,6 +23,10 @@ const Layout = () => {
         setIsMenuUnclicked(!isMenuUnclicked)
     }
 
+    const styles = {
+        textDecoration: "underline",
+    }
+
     return(
         <div>
             <nav>
@@ -34,9 +38,18 @@ const Layout = () => {
                 </div>
             </nav>
             <div className={menu_class}>
-                <NavLink to="host">Host</NavLink>
-                <NavLink to="about">About</NavLink>
-                <NavLink to="vans">Vans</NavLink>
+                <NavLink 
+                    to="host"
+                    style={({isActive})=> isActive ? styles : null}
+                >Host</NavLink>
+                <NavLink 
+                    to="about"
+                    style={({isActive})=> isActive ? styles : null}
+                >About</NavLink>
+                <NavLink 
+                    to="vans"
+                    style={({isActive})=> isActive ? styles : null}
+                >Vans</NavLink>
             </div>
             <main className={outlet_container}>
                 <Outlet />
