@@ -1,0 +1,21 @@
+.about-image{
+    background-image: url('../../public/images/about-hero.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    height: 50vh;
+}
+
+.about-contanier{
+    background-color: #FFF7ED;
+    padding: 2.5em 2em;
+}
+
+.about-box h1{
+    margin-bottom: 1.3em;
+    line-height: 1.5em;
+}
+
+.about-p1{
+    margin-bottom: 1.5em;
+}
