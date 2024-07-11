@@ -16,6 +16,27 @@
     line-height: 1.5em;
 }
 
-.about-p1{
+.about-box p{
     margin-bottom: 1.5em;
+}
+
+.about-contanier2{
+    background-color: #FFCC8D;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.about-contanier2 h2{
+    line-height: 1.2em;
+}
+
+.about-box button{
+    margin-top: 1.5em;
+    padding: 1.1em 1.3em;
+    font-weight: bolder;
+    border-radius: 10px;
+    background-color: #161616;
+    border: none;
+    color: #fff;
+    cursor: pointer;
 }
