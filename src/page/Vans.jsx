@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 import "./Vans.css";
 
 const Vans = () => {
@@ -32,17 +32,17 @@ const Vans = () => {
                 : "#161616";
 
             return (
-                <div key={van.id} className="van-box">
-                    <img src={van.imageUrl} />
-                    <div className="vans-text">
-                    <h3>{van.name}</h3>
-                    <h3>${van.price}</h3>
-                    </div>
-                    <p className="vans-fix">/day</p>
-                    <button style={{ backgroundColor: backColor }}>
-                    {van.type}
-                    </button>
+              <div key={van.id} className="van-box">
+                <img src={van.imageUrl} />
+                <div className="vans-text">
+                  <h3>{van.name}</h3>
+                  <h3>${van.price}</h3>
                 </div>
+                <p className="vans-fix">/day</p>
+                <button style={{ backgroundColor: backColor }}>
+                  {van.type}
+                </button>
+              </div>
             );
           })
         ) : (
