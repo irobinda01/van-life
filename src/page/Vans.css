@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .vans-box{
     background-color: #FFF7ED;
     padding: 4.5em 2em;
@@ -16,6 +21,7 @@
     width: 47%;
     max-width: 160px;
     margin-bottom: 2em;
+    position: relative;
 }
 .van-box img{
     width: 100%;
@@ -23,4 +29,24 @@
 }
 .van-box h3{
     font-weight: bolder;
+}
+.van-box button{
+    border: none;
+    padding: 0.5em 1em;
+    font-weight: bolder;
+    color: #FFEAD0;
+    border-radius: 5px;
+    margin-top: 0.3em;
+}
+.van-box p{
+    font-weight: bolder;
+}
+.vans-text{
+    display: flex;
+    justify-content: space-between;
+}
+.vans-fix{
+    position: absolute;
+    right: 0px;
+    bottom: 18px;
 }
