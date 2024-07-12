@@ -13,6 +13,7 @@
     color: #fff;
     display: flex;
     flex-direction: column;
+    border: none;
 }
 
 .home-box h1{

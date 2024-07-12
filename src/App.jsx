@@ -6,6 +6,7 @@ import Host from "./page/Host";
 import About from "./page/About";
 import Vans from "./page/Vans";
 import "./App.css"
+import "./server";
 
 const App = () => {
     return(
