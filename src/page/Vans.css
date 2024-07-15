@@ -18,14 +18,13 @@
 }
 
 .van-box{
-    width: 49%;
+    width: 47%;
     margin-bottom: 2em;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    box-shadow: 0 1px 8px #FFCC8D;
-    padding: 0.5em;
-    border-radius: 10px
+    border-bottom: 1px solid #FFCC8D;
+    padding-bottom: 1em;
 }
 .van-box img{
     width: 100%;
