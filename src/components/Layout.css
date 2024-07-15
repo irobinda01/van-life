@@ -1,11 +1,12 @@
 h1{
     font-weight: bolder;
 }
-a{
+.menu a{
     text-decoration: none;
     color: black;
     margin: 1em;
     font-weight: bolder;
+    text-align: center;
 }
 
 nav{

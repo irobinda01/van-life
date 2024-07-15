@@ -18,7 +18,7 @@
 }
 
 .van-box{
-    width: 47%;
+    width: 100%;
     margin-bottom: 2em;
     display: flex;
     flex-direction: column;
@@ -26,6 +26,15 @@
     border-bottom: 1px solid #FFCC8D;
     padding-bottom: 1em;
 }
+
+a{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    width: 48%;
+    color: black;
+}
+
 .van-box img{
     width: 100%;
     border-radius: 10px;

@@ -32,21 +32,25 @@ const Vans = () => {
                 : "#161616";
 
             return (
-              <div key={van.id} className="van-box">
-                <img src={van.imageUrl} />
-                <div className="vans-writeUp">
-                  <div className="vans-text">
-                    <h2>{van.name}</h2>
-                    <button style={{ backgroundColor: backColor, width: "65%" }}>
-                      {van.type}
-                    </button>
-                  </div>
-                  <div className="vans-price">
-                    <p>${van.price}</p>
-                    <p>/day</p>
+              <Link key={van.id} to={`/vans/${van.id}`} style={{display: "inline-block"}}>
+                <div  className="van-box">
+                  <img src={van.imageUrl} />
+                  <div className="vans-writeUp">
+                    <div className="vans-text">
+                      <h2>{van.name}</h2>
+                      <button
+                        style={{ backgroundColor: backColor, width: "65%" }}
+                      >
+                        {van.type}
+                      </button>
+                    </div>
+                    <div className="vans-price">
+                      <p>${van.price}</p>
+                      <p>/day</p>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             );
           })
         ) : (
