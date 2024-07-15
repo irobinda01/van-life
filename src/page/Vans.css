@@ -37,6 +37,7 @@
     border: none;
     padding: 0.5em 1em;
     font-weight: bolder;
+    font-size: 100%;
     color: #FFEAD0;
     border-radius: 5px;
     margin-top: 0.3em;
@@ -56,6 +57,9 @@
 .vans-text h2{
     font-weight: bolder;
     font-size: 100%;
+}
+.vans-text button{
+    width: 100%;
 }
 
 .vans-price{
