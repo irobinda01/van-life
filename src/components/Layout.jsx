@@ -23,6 +23,11 @@ const Layout = () => {
         setIsMenuUnclicked(!isMenuUnclicked)
     }
 
+    const offMenu = ()=> {
+        setMenuClass("menu hidden")
+        sertBurgerClass("burger-bar unclicked")
+    }
+
     const styles = {
         textDecoration: "underline",
     }
@@ -41,14 +46,17 @@ const Layout = () => {
                 <NavLink 
                     to="host"
                     style={({isActive})=> isActive ? styles : null}
+                    onClick={offMenu}
                 >Host</NavLink>
                 <NavLink 
                     to="about"
                     style={({isActive})=> isActive ? styles : null}
+                    onClick={offMenu}
                 >About</NavLink>
                 <NavLink 
                     to="vans"
                     style={({isActive})=> isActive ? styles : null}
+                    onClick={offMenu}
                 >Vans</NavLink>
             </div>
             <main className={outlet_container}>
