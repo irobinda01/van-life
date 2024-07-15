@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 import "./About.css";
 
 const About = () => {
@@ -18,7 +19,7 @@ const About = () => {
         </p>
         <div className="about-contanier2">
           <h2>Your destination is waiting. Your van is ready.</h2>
-          <button>Explore our vans</button>
+          <Link to="/vans">Explore our vans</Link>
         </div>
       </div>
     </div>

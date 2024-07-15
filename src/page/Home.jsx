@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 import "./Home.css";
 
 const Home = () => {
@@ -11,7 +12,7 @@ const Home = () => {
             perfect van to make your perfect road trip.
         </p>
       </div>
-      <button>Find your van</button>
+      <Link to="vans">Find your van</Link>
     </div>
   );
 };

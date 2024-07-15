@@ -25,7 +25,7 @@
     margin-bottom: 4em;
 }
 
-.home-box button{
+.home-box a{
     padding: 1.3em;
     font-weight: bolder;
     border-radius: 10px;
@@ -33,4 +33,7 @@
     border: none;
     color: #fff;
     cursor: pointer;
+    text-align: center;
+    font-family: sans-serif;
+    display: inline-block;
 }

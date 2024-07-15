@@ -31,13 +31,15 @@
     line-height: 1.2em;
 }
 
-.about-box button{
+.about-box a{
     margin-top: 1.5em;
     padding: 1.1em 1.3em;
     font-weight: bolder;
+    font-family: sans-serif;
     border-radius: 10px;
     background-color: #161616;
     border: none;
     color: #fff;
     cursor: pointer;
+    display: inline-block;
 }
