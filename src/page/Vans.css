@@ -23,6 +23,9 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 0.5em;
+    border-radius: 10px
 }
 .van-box img{
     width: 100%;
@@ -43,7 +46,6 @@
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    
 }
 
 .vans-text{
