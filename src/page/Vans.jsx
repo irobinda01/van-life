@@ -11,7 +11,7 @@ const Vans = () => {
     const data = await response.json();
     setVansData(data.vans);
     setState(true);
-    console.log(data.vans);
+    //console.log(data.vans);
   };
 
   useEffect(() => {
