@@ -18,12 +18,12 @@
 }
 
 .van-box{
-    width: 47%;
+    width: 49%;
     margin-bottom: 2em;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 8px #FFCC8D;
     padding: 0.5em;
     border-radius: 10px
 }
