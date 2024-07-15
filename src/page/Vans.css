@@ -20,15 +20,16 @@
 .van-box{
     width: 47%;
     margin-bottom: 2em;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .van-box img{
     width: 100%;
     border-radius: 10px;
+    margin-bottom: 0.7em;
 }
-.van-box h3{
-    font-weight: bolder;
-}
+
 .van-box button{
     border: none;
     padding: 0.5em 1em;
@@ -37,15 +38,31 @@
     border-radius: 5px;
     margin-top: 0.3em;
 }
-.van-box p{
-    font-weight: bolder;
+
+.vans-writeUp{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
 }
+
 .vans-text{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    width: 80%;
 }
-.vans-fix{
-    position: absolute;
-    right: 0px;
-    bottom: 14px;
+.vans-text h2{
+    font-weight: bolder;
+    font-size: 100%;
+}
+
+.vans-price{
+    font-family: "Lilita One", sans-serif;
+    font-size: 100%;
+    font-weight: 500;
+    width: 15%;
+    text-align: right;
+}
+.vans-price p {
+    margin-bottom: -3px;
 }
