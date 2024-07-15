@@ -13,12 +13,12 @@ const Layout = () => {
         if(isMenuUnclicked){
             sertBurgerClass("burger-bar clicked")
             setMenuClass("menu visible")
-            setOutletContainer("outlet-container outlet-down")
+            setOutletContainer("outlet-container")
         }
         else{
             sertBurgerClass("burger-bar unclicked")
             setMenuClass("menu")
-            setOutletContainer("outlet-container outlet-up")
+            setOutletContainer("outlet-container")
         }
         setIsMenuUnclicked(!isMenuUnclicked)
     }
