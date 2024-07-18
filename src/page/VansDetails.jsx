@@ -50,6 +50,7 @@ const VansDetails = () => {
             </h3>
           </div>
           <p>{details.description}</p>
+          <button>Rent this van</button>
         </div>
       ) : (
         <h1>Loading</h1>
