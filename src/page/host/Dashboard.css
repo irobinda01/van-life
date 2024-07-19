@@ -1,0 +1,24 @@
+.dashboard-box{
+    background-color: #FFF7ED;
+}
+
+.dashboard-box ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+.section-1 ul{
+    margin: 1em 0;
+}
+
+
+.dashboard-box .section-1{
+    padding: 2em;
+    background-color: #FFEAD0;
+}
+.dashboard-box .section-2{
+    background-color: #FFDDB2;
+    padding: 2em;
+}

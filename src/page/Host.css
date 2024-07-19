@@ -1,6 +1,11 @@
 .host-box{
     background-color: #FFF7ED;
-    padding: 6em 2em;
+    padding-top: 6em;
+}
+
+.host-nav-box{
+    margin-bottom: 1em;
+    padding: 0 2em;
 }
 
 .host-nav-box a{
