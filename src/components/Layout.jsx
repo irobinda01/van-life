@@ -34,7 +34,7 @@ const Layout = () => {
 
     return(
         <div>
-            <nav>
+            <nav className="home-nav">
                 <Link to="/"><h1>#VANLIFE</h1></Link>
                 <div className="burger-menu" onClick={updateMenu}>
                     <div className={burger_class}></div>

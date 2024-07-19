@@ -45,3 +45,9 @@
 .vans-details-lighter{
     font-weight: lighter;
 }
+
+.boke-button{
+    background-color: #FF8C38;
+    color: #fff;
+    width: 100%;
+}
