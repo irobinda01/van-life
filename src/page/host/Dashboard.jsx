@@ -3,8 +3,8 @@ import { FaStar } from "react-icons/fa";
 import "./Dashboard.css"
 
 const Dashboard = ()=> {
-    const [] = useState();
-    const [] = useEffect();
+    //const [] = useState();
+    //const [] = useEffect();
 
     const iconStyle = {
         color: "#FF8C38",
