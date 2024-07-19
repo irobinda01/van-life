@@ -8,6 +8,7 @@ const Host = () => {
             <nav className="host-nav-box">
                 <NavLink 
                     to="."
+                    end
                     style={({isActive})=>{
                         return({
                             fontWeight: isActive ? "bolder" : "",
