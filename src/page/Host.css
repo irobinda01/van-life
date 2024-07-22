@@ -13,6 +13,8 @@
 }
 
 .host-nav-box a{
+    color: inherit;
+    text-decoration: inherit;
     flex: 0 ;
     font-size: 1.1rem;
     background-color: #FFEAD0;
