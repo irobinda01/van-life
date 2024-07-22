@@ -3,8 +3,7 @@ import { FaStar } from "react-icons/fa";
 import "./Dashboard.css"
 
 const Dashboard = ()=> {
-    //const [] = useState();
-    //const [] = useEffect();
+    const [vans, setVans] = useState(null);
 
     const iconStyle = {
         color: "#FF8C38",
@@ -16,6 +15,34 @@ const Dashboard = ()=> {
         textDecoration: "underline",
         fontWeight: "bolder",
     }
+
+    const getData = async () => {
+        const response = await fetch("api/vans")
+        const data = await response.json()
+        setVans(data.vans);
+    }
+
+    useEffect(()=>{
+        getData();
+    }, [])
+
+    if(vans){
+        console.log(vans);
+    }
+    const vanTemplate = vans ? vans.map((van) =>{
+        return(
+            <div className="dashboard-van-box">
+                <img src={van.imageUrl}/>
+                <div className="overall">
+                    <div className="dashboard-van-text">
+                        <h1>{van.name}</h1>
+                        <p>Edit</p>
+                    </div>
+                    <h2>${van.price}/day</h2>
+                </div>
+            </div>
+        )
+    }) : <h1>Loading...</h1>
 
     return(
         <div className="dashboard-box">
@@ -36,7 +63,9 @@ const Dashboard = ()=> {
                     <li><h2>Your listed vans</h2></li>
                     <li>View all</li>
                 </ul>
-                {}
+                <div className="dashboard-vans-container">
+                    {vanTemplate}
+                </div>
             </div>
         </div>
     )

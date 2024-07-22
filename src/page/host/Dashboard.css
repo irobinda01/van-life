@@ -26,3 +26,53 @@
     background-color: #FFF7ED;
     padding: 2em;
 }
+
+.dashboard-vans-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.dashboard-van-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fff;
+    padding: 0.7em;
+    margin: 1em 0;
+    border-radius: 10px;
+    font-size: 0.8rem;
+}
+
+.dashboard-van-box img {
+    width: 25%;
+    border-radius: 10px;
+}
+
+.dashboard-van-box h1{
+    font-family: "Source Code Pro", monospace;
+    font-size: 1.8em;
+    display: inline-block;
+}
+
+.dashboard-van-box h2{
+    font-size: 1.2em;
+}
+
+.dashboard-van-box p{
+    margin-left: auto;
+    font-size: 1.3em;
+}
+
+.overall{
+    width: 70%;
+}
+
+.dashboard-van-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.4em;
+    width: 100%;
+}
