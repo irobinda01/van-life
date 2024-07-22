@@ -12,7 +12,7 @@ const Host = () => {
                     style={({isActive})=>{
                         return({
                             fontWeight: isActive ? "bolder" : "",
-                            textDecoration: isActive ? "underline" : "",
+                            backgroundColor: isActive ? "#FFDDB2" : "#FFEAD0",
                         })
                     }}
                 >Dashboard</NavLink>
@@ -21,7 +21,7 @@ const Host = () => {
                     style={({isActive})=>{
                         return({
                             fontWeight: isActive ? "bolder" : "",
-                            textDecoration: isActive ? "underline" : "",
+                            backgroundColor: isActive ? "#FFDDB2" : "#FFEAD0",
                         })
                     }}
                 >Income</NavLink>
@@ -30,7 +30,7 @@ const Host = () => {
                     style={({isActive})=>{
                         return({
                             fontWeight: isActive ? "bolder" : "",
-                            textDecoration: isActive ? "underline" : "",
+                            backgroundColor: isActive ? "#FFDDB2" : "#FFEAD0",
                         })
                     }}
                 >Vans</NavLink>
@@ -39,7 +39,7 @@ const Host = () => {
                     style={({isActive})=>{
                         return({
                             fontWeight: isActive ? "bolder" : "",
-                            textDecoration: isActive ? "underline" : "",
+                            backgroundColor: isActive ? "#FFDDB2" : "#FFEAD0",
                         })
                     }}
                 >Reviews</NavLink>
