@@ -30,10 +30,34 @@ const Vans = () => {
     <div className="vans-box">
       <h1>Explore our van options</h1>
       <div className="sorting-box">
-        <NavLink to="?type=simple"><button>Simple</button></NavLink>
-        <NavLink to="?type=luxury"><button>Luxury</button></NavLink>
-        <NavLink to="?type=rugged"><button>Rugged</button></NavLink>
-        <Link to="." className="clear-all">Clear filter</Link>
+        <NavLink 
+          to="?type=simple"
+          style={({isActive})=>{
+            return({
+              backgroundColor: isActive ? "#FFCC8D" : "#FFEAD0"
+            })
+          }}
+          end
+        >Simple</NavLink>
+        <NavLink 
+          to="?type=luxury"
+          style={({isActive})=>{
+            return({
+              backgroundColor: isActive ? "#FFCC8D" : "#FFEAD0"
+            })
+          }}
+          end
+        >Luxury</NavLink>
+        <NavLink 
+          to="?type=rugged"
+          style={({isActive})=>{
+            return({
+              backgroundColor: isActive ? "#FFCC8D" : "#FFEAD0"
+            })
+          }}
+          end
+        >Rugged</NavLink>
+        <Link to="." className="clear-all">Clear</Link>
       </div>
       <div style={{ width: "100%" }} className="van-container">
         {state ? (

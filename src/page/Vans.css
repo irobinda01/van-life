@@ -10,16 +10,20 @@
 
 .sorting-box{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 3em;
+    width: 100%;
 }
-.sorting-box button{
+.sorting-box a{
+    flex: 0;
+    padding: 0.5em 1.5em;
     background-color: #FFEAD0;
-    border: none;
-    padding: 0.5em 1em;
     border-radius: 10px;
 }
 .vans-box .clear-all{
     text-decoration: underline;
+    background-color: transparent;
 }
 
 .vans-box h1{
