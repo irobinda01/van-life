@@ -7,8 +7,23 @@
     background-color: #FFF7ED;
     padding: 4.5em 2em;
 }
+
+.sorting-box{
+    display: flex;
+    margin-bottom: 3em;
+}
+.sorting-box button{
+    background-color: #FFEAD0;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+}
+.vans-box .clear-all{
+    text-decoration: underline;
+}
+
 .vans-box h1{
-    margin: 2em 0 1em;
+    margin: 2em 0 0.5em;
 }
 
 .van-container{
