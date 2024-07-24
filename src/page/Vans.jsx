@@ -22,42 +22,20 @@ const Vans = () => {
   const [queryParams, setQueryParams] = useSearchParams()
   const paramsUrl = queryParams.get("type")
   //console.log(paramsUrl)
-  const vansElements = paramsUrl ? vansData.filter(van => van.type.toLowerCase() === paramsUrl) : 
-  vansData
+  const vansElements = paramsUrl ? vansData.filter(van => van.type.toLowerCase() === paramsUrl) : vansData
 
+  const handleSorting = ()=>{
+
+  }
 
   return (
     <div className="vans-box">
       <h1>Explore our van options</h1>
       <div className="sorting-box">
-        <NavLink 
-          to="?type=simple"
-          style={({isActive})=>{
-            return({
-              backgroundColor: isActive ? "#FFCC8D" : "#FFEAD0"
-            })
-          }}
-          end
-        >Simple</NavLink>
-        <NavLink 
-          to="?type=luxury"
-          style={({isActive})=>{
-            return({
-              backgroundColor: isActive ? "#FFCC8D" : "#FFEAD0"
-            })
-          }}
-          end
-        >Luxury</NavLink>
-        <NavLink 
-          to="?type=rugged"
-          style={({isActive})=>{
-            return({
-              backgroundColor: isActive ? "#FFCC8D" : "#FFEAD0"
-            })
-          }}
-          end
-        >Rugged</NavLink>
-        <Link to="." className="clear-all">Clear</Link>
+        <button onClick={()=> setQueryParams({type: "simple"})} className="btn simple">Simple</button>
+        <button onClick={()=> setQueryParams({type: "luxury"})} className="btn luxury">Luxury</button>
+        <button onClick={()=> setQueryParams({type: "rugged"})} className="btn rugged">Rugged</button>
+        <button onClick={()=> setQueryParams({type: ""})} className="btn clear-all" >Clear</button>
       </div>
       <div style={{ width: "100%" }} className="van-container">
         {state ? (
