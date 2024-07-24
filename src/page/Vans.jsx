@@ -24,10 +24,6 @@ const Vans = () => {
   //console.log(paramsUrl)
   const vansElements = paramsUrl ? vansData.filter(van => van.type.toLowerCase() === paramsUrl) : vansData
 
-  const handleSorting = ()=>{
-
-  }
-
   return (
     <div className="vans-box">
       <h1>Explore our van options</h1>
