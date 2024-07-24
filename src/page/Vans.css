@@ -22,20 +22,26 @@
     border-radius: 10px;
     border: none;
 }
-.btn .simple:hover,
-.btn .simple:focus,
-.btn .simple:active{
+.simple:hover,
+.simple:active,
+.simple:focus{
     background-color: #E17654;
+    color: #fff;
+    border: 1px solid #E17654;
 }
-.btn .luxury:focus,
-.btn .luxury:hover,
-.btn .luxury:active{
+.luxury:focus,
+.luxury:hover,
+.luxury:active{
     background-color: #161616;
+    color: #fff;
+    border: none;
 }
-.btn .rugged:active,
-.btn .rugged:focus,
-.btn .rugged:hover{
+.rugged:active,
+.rugged:focus,
+.rugged:hover{
     background-color: #115E59;
+    color: #fff;
+    border: none;
 }
 
 .vans-box .clear-all{
