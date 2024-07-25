@@ -40,6 +40,7 @@
 .vans-box .clear-all{
     text-decoration: underline;
     background-color: transparent;
+    transition: 500ms;
 }
 
 .vans-box h1{
