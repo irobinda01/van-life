@@ -24,15 +24,15 @@
     border-radius: 10px;
     border: none;
 }
-.simple:active{
+.simple:focus{
     background-color: #E17654;
     color: #fff;
 }
-.luxury:active{
+.luxury:focus{
     background-color: #161616;
     color: #fff;
 }
-.rugged:active{
+.rugged:focus{
     background-color: #115E59;
     color: #fff;
 }
