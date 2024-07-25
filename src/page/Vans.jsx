@@ -19,30 +19,56 @@ const Vans = () => {
     getData();
   }, []);
 
-  const [queryParams, setQueryParams] = useSearchParams()
-  const paramsUrl = queryParams.get("type")
+  const [queryParams, setQueryParams] = useSearchParams();
+  const paramsUrl = queryParams.get("type");
   //console.log(paramsUrl)
-  const vansElements = paramsUrl ? vansData.filter(van => van.type.toLowerCase() === paramsUrl) : vansData;
+  const vansElements = paramsUrl
+    ? vansData.filter((van) => van.type.toLowerCase() === paramsUrl)
+    : vansData;
 
-  const handleFilter = (key, value)=> {
-    setQueryParams(prev => {
-      if(value === null){
+  const handleFilter = (key, value) => {
+    setQueryParams((prev) => {
+      if (value === null) {
         prev.delete(key);
-      }else{
+      } else {
         prev.set(key, value);
       }
       return prev;
-    })
-  }
+    });
+  };
 
   return (
     <div className="vans-box">
       <h1>Explore our van options</h1>
       <div className="sorting-box">
-        <button onClick={()=> handleFilter("type", "simple")} className="btn simple">Simple</button>
-        <button onClick={()=> setQueryParams({type: "luxury"})} className="btn luxury">Luxury</button>
-        <button onClick={()=> setQueryParams({type: "rugged"})} className="btn rugged">Rugged</button>
-        <button onClick={()=> setQueryParams({type: ""})} className="btn clear-all" >Clear</button>
+        <button
+          onClick={() => handleFilter("type", "simple")}
+          className="btn simple"
+        >
+          Simple
+        </button>
+        <button
+          onClick={() => setQueryParams({ type: "luxury" })}
+          className="btn luxury"
+        >
+          Luxury
+        </button>
+        <button
+          onClick={() => setQueryParams({ type: "rugged" })}
+          className="btn rugged"
+        >
+          Rugged
+        </button>
+        {paramsUrl ? (
+          <button
+            onClick={() => setQueryParams({ type: "" })}
+            className="btn clear-all"
+          >
+            Clear
+          </button>
+        ) : (
+          ""
+        )}
       </div>
       <div style={{ width: "100%" }} className="van-container">
         {state ? (
@@ -55,8 +81,12 @@ const Vans = () => {
                 : "#161616";
 
             return (
-              <Link key={van.id} to={`/vans/${van.id}`} style={{display: "inline-block"}}>
-                <div  className="van-box">
+              <Link
+                key={van.id}
+                to={`/vans/${van.id}`}
+                style={{ display: "inline-block" }}
+              >
+                <div className="van-box">
                   <img src={van.imageUrl} />
                   <div className="vans-writeUp">
                     <div className="vans-text">
