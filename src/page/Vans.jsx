@@ -22,13 +22,24 @@ const Vans = () => {
   const [queryParams, setQueryParams] = useSearchParams()
   const paramsUrl = queryParams.get("type")
   //console.log(paramsUrl)
-  const vansElements = paramsUrl ? vansData.filter(van => van.type.toLowerCase() === paramsUrl) : vansData
+  const vansElements = paramsUrl ? vansData.filter(van => van.type.toLowerCase() === paramsUrl) : vansData;
+
+  const handleFilter = (key, value)=> {
+    setQueryParams(prev => {
+      if(value === null){
+        prev.delete(key);
+      }else{
+        prev.set(key, value);
+      }
+      return prev;
+    })
+  }
 
   return (
     <div className="vans-box">
       <h1>Explore our van options</h1>
       <div className="sorting-box">
-        <button onClick={()=> setQueryParams({type: "simple"})} className="btn simple">Simple</button>
+        <button onClick={()=> handleFilter("type", "simple")} className="btn simple">Simple</button>
         <button onClick={()=> setQueryParams({type: "luxury"})} className="btn luxury">Luxury</button>
         <button onClick={()=> setQueryParams({type: "rugged"})} className="btn rugged">Rugged</button>
         <button onClick={()=> setQueryParams({type: ""})} className="btn clear-all" >Clear</button>

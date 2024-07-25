@@ -16,6 +16,8 @@
     width: 100%;
 }
 .sorting-box .btn{
+    all: unset; 
+    cursor: pointer; 
     flex: 0;
     padding: 0.3em 1.3em;
     background-color: #FFEAD0;
@@ -27,7 +29,6 @@
 .simple:focus{
     background-color: #E17654;
     color: #fff;
-    border: 1px solid #E17654;
 }
 .luxury:focus,
 .luxury:hover,
