@@ -67,7 +67,7 @@ const Vans = () => {
             Clear
           </button>
         ) : (
-          ""
+          null
         )}
       </div>
       <div style={{ width: "100%" }} className="van-container">
