@@ -48,20 +48,20 @@ const Vans = () => {
           Simple
         </button>
         <button
-          onClick={() => setQueryParams({ type: "luxury" })}
+          onClick={() => handleFilter("type", "luxury")}
           className="btn luxury"
         >
           Luxury
         </button>
         <button
-          onClick={() => setQueryParams({ type: "rugged" })}
+          onClick={() => handleFilter("type", "rugged")}
           className="btn rugged"
         >
           Rugged
         </button>
         {paramsUrl ? (
           <button
-            onClick={() => setQueryParams({ type: "" })}
+            onClick={() => handleFilter("type", null)}
             className="btn clear-all"
           >
             Clear
