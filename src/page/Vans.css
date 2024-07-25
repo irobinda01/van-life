@@ -24,17 +24,14 @@
     border-radius: 10px;
     border: none;
 }
-.simple:hover,
 .simple:active{
     background-color: #E17654;
     color: #fff;
 }
-.luxury:hover,
 .luxury:active{
     background-color: #161616;
     color: #fff;
 }
-.rugged:hover,
 .rugged:active{
     background-color: #115E59;
     color: #fff;
