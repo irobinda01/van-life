@@ -25,21 +25,19 @@
     border: none;
 }
 .simple:hover,
-.simple:focus{
+.simple:active{
     background-color: #E17654;
     color: #fff;
 }
 .luxury:hover,
-.luxury:focus{
+.luxury:active{
     background-color: #161616;
     color: #fff;
-    border: none;
 }
 .rugged:hover,
-.rugged:focus{
+.rugged:active{
     background-color: #115E59;
     color: #fff;
-    border: none;
 }
 
 .vans-box .clear-all{
