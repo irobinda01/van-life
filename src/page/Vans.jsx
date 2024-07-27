@@ -21,10 +21,20 @@ const Vans = () => {
 
   const [queryParams, setQueryParams] = useSearchParams();
   const paramsUrl = queryParams.get("type");
-  //console.log(paramsUrl)
-  const vansElements = paramsUrl
+  console.log(paramsUrl)
+  console.log(queryParams.toString())
+  let vansElements;
+  if(state){
+    vansElements = paramsUrl
     ? vansData.filter((van) => van.type.toLowerCase() === paramsUrl)
     : vansData;
+  }
+  
+  const btnStyle = {
+    backgroundColor: paramsUrl === "simple" ? "#E17654" : paramsUrl === "Luxury" ? "#161616" : 
+    paramsUrl === "Rugged" ? "#115E59" : "#FFEAD0",
+    color: paramsUrl ? "#ffffff" : "black"
+  }
 
   const handleFilter = (key, value) => {
     setQueryParams((prev) => {
@@ -82,6 +92,7 @@ const Vans = () => {
 
             return (
               <Link
+                state={{ search: queryParams.toString() }}
                 key={van.id}
                 to={`/vans/${van.id}`}
                 style={{ display: "inline-block" }}
