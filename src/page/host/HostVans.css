@@ -1,0 +1,22 @@
+.host-vans-container{
+    padding: 2em;
+    width: 100%;
+}
+.host-vans-container h1{
+    margin-bottom: 1em;
+}
+
+.host-vans-box{
+    margin: 1em 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1.5em;
+    border-radius: 10px;
+}
+.host-vans-box img{
+    width: 25%;
+    margin-right: 1em;
+    border-radius: 10px;
+}
